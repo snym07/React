@@ -1,5 +1,5 @@
 {
-  "name": "react-practice",
+  "name": "react_material",
   "version": "1.0.0",
   "description": "react first project",
   "main": "index.js",
@@ -13,7 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "material-ui": "^0.15.0",
+    "react-tap-event-plugin": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
