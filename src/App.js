@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RaisedButton from 'material-ui/RaisedButton';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+import MyAppBar from './MyAppBar';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1>React</h1>
 				<MuiThemeProvider>
-				 <RaisedButton label="Default" />
+					<MyAppBar />
 				</MuiThemeProvider>
 			</div>
 		);
