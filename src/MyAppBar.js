@@ -22,17 +22,21 @@ export default class MyAppBar extends Component {
   }
 
 	render(){
+
 		return (
-				<div>
+				<div className="row">
 					<AppBar
 				    title="React Material UI"
 				    iconClassNameRight="muidocs-icon-navigation-expand-more"
 				    onLeftIconButtonTouchTap={this.handleToggle.bind(this)}
+				    style={{
+				    	'fontSize': 'larger'
+				    }}
 				  />
 
 					<Drawer 
 						docked={false}
-	          width={200}
+	          width={250}
 	          open={this.state.open}
 	          onRequestChange={(open) => this.setState({open})}
 					>
