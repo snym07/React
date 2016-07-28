@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
+import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar';
 import SvgIcon from 'material-ui/SvgIcon';
+import Drawer from 'material-ui/Drawer';
 
 // icons
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
@@ -12,8 +13,24 @@ import Message from 'material-ui/svg-icons/editor/mode-comment';
 import PopUp from './PopUp';
 import LogOut from './LogOut';
 import SearchBox from './SearchBox';
+import LeftPage from '../left_page/LeftPage';
 
 export default class FbAppbar extends Component {
+
+	constructor(){
+		super();
+		this.state = {
+			open : false,
+		};
+	}
+
+	handleToggle(){
+  	return (this.setState({open: !this.state.open}));
+  }
+
+  handleClose(){ 
+  	this.setState({open: false});
+  }
 
 	render(){
 
@@ -35,12 +52,19 @@ export default class FbAppbar extends Component {
 					<AppBar
 						title={title}
 						titleStyle={myStyle}
+						style={{position:'fixed'}}
 						showMenuIconButton={menuButton}
+						onLeftIconButtonTouchTap={this.handleToggle.bind(this)}
 						//children={<SearchBox/>}
 						iconElementRight={
 							<Toolbar style={{backgroundColor: 'transparent'}}>
 
 								<ToolbarGroup>
+									<ToolbarTitle 
+										text="Steve Rogers" 
+										style={{color: '#EEEEEE', lineHeight:'50px'}} 
+										className="hidden-xs"
+									/>
 									<PopUp 
 										icon={<People color={'white'}/>} 
 										title="Friend Requests"
@@ -67,6 +91,14 @@ export default class FbAppbar extends Component {
 							</Toolbar>
 						}
 					/>
+					<Drawer
+	          docked={false}
+	          width={200}
+	          open={this.state.open}
+	          onRequestChange={(open) => this.setState({open})}
+	        >
+	          <LeftPage />
+	        </Drawer>
 				</div>
 			);
 	}

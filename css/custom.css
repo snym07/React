@@ -1,5 +1,5 @@
 body{
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 .search-bar input{
@@ -8,14 +8,13 @@ body{
 
 /* :::::::::::::::: Left container of the page */
 .left-page{
-	background-color: pink;
-	height: 400px;
+	margin-top: 64px;
+	/*background-color: pink;*/
 }
 
 /* :::::::::::::::: middle container of new feeds */
 .new-feeds{
-	
-	
+	margin-top: 64px;
 }
 
 /* status update */
@@ -77,6 +76,7 @@ body{
 
 /* ::::::::::::::::::::: right container of the page */
 .right-page{
+	margin-top: 64px;
 	background-color: pink;
 	height: 400px;
 	padding: 0;
