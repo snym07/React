@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-import StatusUpdate from './StatusUpdate';
+//import StatusUpdate from './StatusUpdate';
 import Story from './Story';
 
 export default class NewFeeds extends Component {
 	render() {
 		return (
 			<div>
-				<StatusUpdate />
+				{//<StatusUpdate />
+				}
 				<Story 
 					userDP="images/captain_america.png"
 					userName="Captain America"

@@ -15,6 +15,10 @@ import LogOut from './LogOut';
 import SearchBox from './SearchBox';
 import LeftPage from '../left_page/LeftPage';
 
+import FriendRequestPopUp from './FriendRequestPopUp';
+import MessagesPopUp from './MessagesPopUp';
+import NotificationsPopUp from './NotificationsPopUp';
+
 export default class FbAppbar extends Component {
 
 	constructor(){
@@ -45,7 +49,7 @@ export default class FbAppbar extends Component {
 
 		const title = (screen.width > 768) ? 'Facebook' : fbIcon;
 
-		const menuButton = (screen.width > 768) ? false : true;
+		const menuButton = (screen.width > 769) ? false : true;
 
 		return (
 				<div>
@@ -69,21 +73,21 @@ export default class FbAppbar extends Component {
 										icon={<People color={'white'}/>} 
 										title="Friend Requests"
 										badge="5"
-										content={<h2>content</h2>}
+										content={<FriendRequestPopUp />}
 									/>
 
 									<PopUp 
 										icon={<Message color={'white'}/>} 
 										title="Messages"
 										badge="2"
-										content={<h2>content</h2>}
+										content={<MessagesPopUp />}
 									/>
 
 									<PopUp 
 										icon={<Notification color={'white'}/>} 
 										title="Notifications"
 										badge="12"
-										content={<h2>content</h2>}
+										content={<NotificationsPopUp />}
 									/>
 									
 									<LogOut />

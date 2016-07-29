@@ -22,7 +22,7 @@ export default class LeftPage extends Component {
 		return (
 			<div>
 				<List>
-					<ListItem primaryText="New Feeds" leftIcon={<NewFeeds />} />
+					<ListItem style={{color: '#536DFE'}} primaryText="New Feeds" leftIcon={<NewFeeds color='#536DFE'/>} />
 					<ListItem primaryText="Messages" leftIcon={<Messages />} />
 					<ListItem primaryText="Events" leftIcon={<Event />} />
 				</List>
