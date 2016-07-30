@@ -5,9 +5,12 @@ import CommentBox from './CommentBox';
 
 export default class Story extends Component {
 	render() {
+
+		const styles = (screen.width > 768) ? 'styles-desktop' : 'styles-mobile' ;
+
 		return (
 			<div className="row">
-				<div className="story col-xs-12">
+				<div className="col-xs-12" className={styles}>
 					<Card>
 				    <CardHeader
 				      title={this.props.userName}

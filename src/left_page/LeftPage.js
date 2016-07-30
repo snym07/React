@@ -31,7 +31,7 @@ export default class LeftPage extends Component {
 				<Subheader>Apps</Subheader>
 				<List>
 					<ListItem primaryText="Games" leftIcon={<Games />} />
-					<ListItem primaryText="On This Day" leftIcon={<PhotoAlbum />} />
+					<ListItem primaryText="Album" leftIcon={<PhotoAlbum />} />
 					<ListItem primaryText="Photos" leftIcon={<Photos />} />
 					<ListItem primaryText="Saved" leftIcon={<Saved />} />
 				</List>

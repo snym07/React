@@ -36,7 +36,7 @@ export default class RightPage extends Component {
 				  			primaryText="Search for Infinty Stone :"
 				  			style={{color: '#536DFE',}}
 				  			innerDivStyle={{paddingLeft: '40px'}}
-				  			secondaryText="The Infinty Stone may be on Earth, be there before Thenos find out about it"
+				  			secondaryText="The Infinty Stone may be on Earth, be there before Thenos finds out about it"
 				  			secondaryTextLines={2}
 				  			leftIcon={<Trending style={{margin: '12px 0'}} color={'#536DFE'} />}
 				  		/>
@@ -59,11 +59,11 @@ export default class RightPage extends Component {
 				</Card>
 					<br />
 				<Card>
-					<p style={{padding: '20px'}}>
+					<p style={{padding: '20px', margin:'0'}}>
 						English (US)
 					</p>
 				</Card>
-				<p style={{padding: '10px'}}>
+				<p style={{padding: '10px', margin: '10px 0'}}>
 					Privacy &nbsp; · &nbsp; Terms &nbsp; · &nbsp; Advertising &nbsp; · &nbsp; Cookies &nbsp; · &nbsp; More 
 				</p>
 			</div>

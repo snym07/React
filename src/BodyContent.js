@@ -31,7 +31,7 @@ export default class BodyContent extends Component {
 					<RightPage />
 				</div>
 
-				<FloatingActionButton zDepth={5} style={style}>
+				<FloatingActionButton zDepth={4} style={style}>
 		      <Chat />
 		    </FloatingActionButton>
 			</div>

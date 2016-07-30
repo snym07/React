@@ -12,18 +12,17 @@ export default class NewFeeds extends Component {
 				<Story 
 					userDP="images/captain_america.png"
 					userName="Captain America"
-					userDate="27th July, Instagram"
-					storyDescription="Jumping from the plane in the air like i just don't care!!"
-					storyUserDP="images/first.jpg"
+					userDate={<span>28th July, <i>Instagram</i></span>}
+					storyDescription="Why is everybody so mad about Pokémon Go? They are not even real!"
 					commentUserDP="images/captain_america.png"
-					likePeople="Batman, Superman"
-				  likeNumber="64"
+					likePeople="Wonder Woman, Superman"
+				  likeNumber="75"
 				/>
 				<Story 
 					userDP="images/batman.jpg"
 					userName="I am Batman"
-					userDate="26th June, Instagram"
-					storyDescription="The place where I kicked Superman's ass..."
+					userDate={<span>26th June, <i>Instagram</i></span>}
+					storyDescription="Gotham city needs some renovation"
 					storyUserDP="images/second.jpg"
 					commentUserDP="images/captain_america.png"
 					likePeople="Wonder Woman, Flash"
@@ -32,7 +31,7 @@ export default class NewFeeds extends Component {
 				<Story 
 					userDP="images/superman.jpg"
 					userName="Superman"
-					userDate="12th June, Orkut"
+					userDate={<span>12th June, <i>Orkut</i></span>}
 					storyDescription="Picture I took from outer space... Amazing right? right!?"
 					storyUserDP="images/third.jpg"
 					commentUserDP="images/captain_america.png"
@@ -40,9 +39,19 @@ export default class NewFeeds extends Component {
 				  likeNumber="2"
 				/>
 				<Story 
+					userDP="images/captain_america.png"
+					userName="Captain America"
+					userDate={<span>27th July, <i>Instagram</i></span>}
+					storyDescription="Jumping from the plane in the air like i just don't care!!"
+					storyUserDP="images/first.jpg"
+					commentUserDP="images/captain_america.png"
+					likePeople="Batman, Superman"
+				  likeNumber="64"
+				/>
+				<Story 
 					userDP="images/wonder_woman.png"
 					userName="Wonder Woman"
-					userDate="10th June, Instagram"
+					userDate={<span>10th June, <i>Instagram</i></span>}
 					storyDescription="Celebrating friend's birthday!!"
 					storyUserDP="images/forth.jpg"
 					commentUserDP="images/captain_america.png"
@@ -52,7 +61,7 @@ export default class NewFeeds extends Component {
 				<Story 
 					userDP="images/batman.jpg"
 					userName="I am Batman"
-					userDate="28th May, Instagram"
+					userDate={<span>28th May, <i>Instagram</i></span>}
 					storyDescription="Money money money money money money money money..."
 					storyUserDP="images/fifth.jpg"
 					commentUserDP="images/captain_america.png"
